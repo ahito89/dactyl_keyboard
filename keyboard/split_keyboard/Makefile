@@ -59,7 +59,7 @@ CONFIG_H = config.h
 # MCU name
 MCU = atmega32u4
 
-COM_PORT=/dev/ttyACM0
+COM_PORT=/dev/tty.usbmodem1421
 PROGRAM_CMD=sleep 3; avrdude -p atmega32u4 -P $(COM_PORT) -c avr109 -U flash:w:$(TARGET).hex
 
 # Processor frequency.
